@@ -7,3 +7,10 @@ tfidf = TfidfVectorizer(min_df=2, max_df=0.5, lowercase=False, ngram_range=(3,4)
 tfidf.fit_transform(sentences)
 
 print(tfidf.vocabulary_)
+
+#Method using CountVectorizer
+
+#vectorizer = CountVectorizer(min_df=10, lowercase=False, ngram_range=(2,3))
+#vectorizer.fit(sentences)
+#print(vectorizer.vocabulary_)
+
